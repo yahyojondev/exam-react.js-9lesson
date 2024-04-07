@@ -161,6 +161,10 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        background-color: white;
+        svg {
+          background-color: white;
+        }
       }
       span {
         color: rgb(0, 0, 0);
