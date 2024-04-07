@@ -2,6 +2,9 @@ import React, { memo, useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import { IoStarSharp } from "react-icons/io5";
+import { AiOutlineUp, AiOutlineDown } from "react-icons/ai";
+import { IoCartOutline } from "react-icons/io5";
+import { FaRegHeart } from "react-icons/fa";
 
 let API_URL = "https://fakestoreapi.com/products";
 
@@ -10,6 +13,7 @@ function SingleRoute() {
   const [product, setProduct] = useState(null);
   const [count, setcount] = useState(0);
   const [loading, setLoading] = useState(false);
+  const [price, setPrice] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -44,10 +48,10 @@ function SingleRoute() {
                 </div>
               </div>
               <div className="single__wrapper__left__top__right">
-                <button className="single__wrapper__top__right__btn">
+                <button className="single__wrapper__left__top__right__btn">
                   Sale off
                 </button>
-                <h1 className="single_wrapper__top__right__title">
+                <h1 className="single__wrapper__left__top__right__title">
                   {product?.title}
                 </h1>
                 <div className="single__top__right__wrapper">
@@ -55,7 +59,7 @@ function SingleRoute() {
                   <p className="rewiev__count">({product?.rating.count})</p>
                 </div>
                 <div className="single__price__wrapper">
-                  <p className="single__price">${product?.price}</p>
+                  <p className="single__price">${product?.price * count}</p>
                   <del className="single__pricedel">${product?.price * 2}</del>
                 </div>
                 <p className="single__top__left__description">
@@ -64,6 +68,26 @@ function SingleRoute() {
                 <p className="single__top__left__category">
                   category:{product?.category}
                 </p>
+                <div className="buy__wrapper">
+                  <div className="count__wrapper">
+                    <span>{count}</span>
+                    <div className="nav__images">
+                      <div onClick={() => setcount((p) => p + 1)}>
+                        <AiOutlineUp />
+                      </div>
+                      <div onClick={() => setcount((p) => p - 1)}>
+                        <AiOutlineDown x />
+                      </div>
+                    </div>
+                  </div>
+                  <button className="single__btn__add">
+                    <IoCartOutline />
+                    Add to cart
+                  </button>
+                  <div className="heart">
+                    <FaRegHeart />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
