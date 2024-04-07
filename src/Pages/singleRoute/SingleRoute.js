@@ -96,7 +96,16 @@ function SingleRoute() {
             <div className="singleRoute__wrapper__left__bottom">
               <ul className="singleRoute__wrapper__left__bottom__list">
                 <li className="singleRoute__wrapper__left__bottom__list__item">
-                  <NavLink></NavLink>
+                  <NavLink>Description</NavLink>
+                </li>
+                <li className="singleRoute__wrapper__left__bottom__list__item">
+                  <NavLink>Additional info</NavLink>
+                </li>
+                <li className="singleRoute__wrapper__left__bottom__list__item">
+                  <NavLink>Vendor</NavLink>
+                </li>
+                <li className="singleRoute__wrapper__left__bottom__list__item">
+                  <NavLink>Reviews (3)</NavLink>
                 </li>
               </ul>
               <p className="singleRoute__wrapper__bottom__text">
@@ -112,7 +121,9 @@ function SingleRoute() {
                 goodness gnashed a jellyfish and one however because.
               </p>
               <ul className="single__wrapper__bottom__list">
-                <li className="single__wrapper___bottom__item"></li>
+                <li className="single__wrapper___bottom__item">
+                  Type Of Packing <span>Bottle</span>
+                </li>
               </ul>
               <hr />
               <p className="singleRoute__wrapper__bottom__text">
@@ -143,6 +154,33 @@ function SingleRoute() {
                 wildly some wow and rose jeepers outgrew lugubrious luridly
                 irrationally attractively dachshund.
               </p>
+              <h2 className="singleRoute__wrapper__bottom__title">
+                Suggested Use
+              </h2>
+              <ul className="singleRoute__bottom__list">
+                <li>Refrigeration not necessary.</li>
+                <li>Stir before serving</li>
+              </ul>
+              <h2 className="singleRoute__wrapper__bottom__title">
+                Other Ingredients
+              </h2>
+              <ul className="singleRoute__bottom__list">
+                <li>Refrigeration not necessary.</li>
+                <li>
+                  This butter was produced using a LTG (Low Temperature
+                  Grinding) process
+                </li>
+                <li>
+                  Made in machinery that processes tree nuts but does not
+                  process peanuts, gluten, dairy or soy
+                </li>
+              </ul>
+              <h2 className="singleRoute__wrapper__bottom__title">Warnings</h2>
+              <ul className="singleRoute__bottom__list">
+                <li>
+                  Oil separation occurs naturally. May contain pieces of shell.
+                </li>
+              </ul>
             </div>
           </div>
           <div className="singleRoute__wrapper__right"></div>
