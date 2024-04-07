@@ -1,0 +1,30 @@
+<svg width="25.000000" height="25.000000" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip6511_1125">
+			<rect id="icon-compare.svg" width="25.000000" height="25.000000" transform="translate(-0.621094 -0.869995)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip6511_1124">
+			<rect id="icon-compare.svg fill" width="25.000000" height="25.000000" transform="translate(-0.621094 -0.869995)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip6511_1123">
+			<rect id="Header" width="25.000000" height="25.000000" transform="translate(-0.621094 -0.869995)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip6511_1123)">
+		<g clip-path="url(#clip6511_1124)">
+			<g clip-path="url(#clip6511_1125)">
+				<mask id="mask6511_1127" mask-type="alpha" maskUnits="userSpaceOnUse" x="-0.621094" y="-0.869995" width="25.000000" height="25.000000">
+					<path id="Vector" d="M-0.63 -0.87L24.37 -0.87L24.37 24.13L-0.63 24.13L-0.63 -0.87Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+				</mask>
+				<g mask="url(#mask6511_1127)">
+					<path id="Vector" d="M18.89 7.19L20.25 6.39C17.3 1.33 10.95 -0.6 5.68 1.96L5.68 0.02L4.1 0.02L4.1 4.75L8.83 4.75L8.83 3.17L6.82 3.17C11.28 1.28 16.45 3 18.89 7.19Z" fill="#253D4E" fill-opacity="1.000000" fill-rule="nonzero"/>
+					<path id="Vector" d="M4.5 19.47C0.84 16.51 -0.12 11.32 2.23 7.24L0.86 6.45C-1.81 11.11 -0.8 17.02 3.27 20.52L1.35 20.52L1.35 22.1L6.08 22.1L6.08 17.36L4.5 17.36L4.5 19.47Z" fill="#253D4E" fill-opacity="1.000000" fill-rule="nonzero"/>
+					<path id="Vector" d="M21.03 9.93L17.69 13.27L18.8 14.39L20.14 13.05C19.61 17.93 15.5 21.64 10.58 21.65L10.58 23.23C16.44 23.22 21.3 18.7 21.73 12.86L23.26 14.39L24.37 13.27L21.03 9.93Z" fill="#253D4E" fill-opacity="1.000000" fill-rule="nonzero"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,23 @@
+.many__cards{
+     padding: 40px 0px 50px;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .many__card{
+            padding: 20px 0px 20px 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 280px;
+            border-radius: 10px;
+            background: rgb(244, 246, 250);
+            .many__card__text__wrapper{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+}
