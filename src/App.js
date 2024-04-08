@@ -12,11 +12,13 @@ import Auth from "./Pages/auth/Auth";
 import Login from "./Pages/login/Login";
 import Navbar from "./components/navbar/Navbar";
 import SingleRoute from "./Pages/singleRoute/SingleRoute";
+// import Navigate from "./components/navigate/Navigate";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      {/* <Navigate /> */}
       <Routes>
         {Routers?.map((el) => (
           <Route key={el.id} path={el.path} element={el.element} />
