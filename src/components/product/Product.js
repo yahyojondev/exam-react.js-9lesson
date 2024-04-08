@@ -12,13 +12,17 @@ function Product() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    // setLoading(true);
+    setLoading(true);
     axios
       .get(API_URL)
       .then((res) => setData(res.data))
-      .catch((err) => console.log(err));
-    // .finally(() => setLoading(false));
+      .catch((err) => console.log(err))
+      .finally(() => setLoading(false));
   }, []);
+
+  if (loading) {
+    return <h2 className="loading">loading...</h2>;
+  }
 
   let productdata = data?.map((el) => (
     <div key={el.id} className="product__card">
@@ -41,10 +45,10 @@ function Product() {
             ${el.price}
             <del>${el.price * 2}</del>
           </p>
-          <NavLink className="product__card__add">
+          <button className="product__card__add">
             <IoCartOutline />
             Add
-          </NavLink>
+          </button>
         </div>
       </div>
     </div>
