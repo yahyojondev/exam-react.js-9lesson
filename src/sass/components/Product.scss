@@ -61,18 +61,24 @@
   .product__card {
     padding: 10px;
     width: 100%;
-    max-width: 275px;
     margin: auto;
     height: 430px;
     box-sizing: border-box;
     border: 1px solid rgb(236, 236, 236);
     border-radius: 15px;
     background: rgb(255, 255, 255);
+    @media only screen and (min-width: 400px) {
+      max-width: 275px;
+    }
     .product__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       object-fit: cover;
       width: 100%;
       max-width: 230px;
       height: 250px;
+      margin: auto;
     }
     .product__card__content {
       padding: 10px 0;
