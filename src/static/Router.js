@@ -22,7 +22,9 @@ import singleRoute2 from "../assets/images/singleRoutecategory2.svg";
 import singleRoute3 from "../assets/images/singleRoutecategory3.svg";
 import singleRoute4 from "../assets/images/singleRoutecategory4.svg";
 import singleRoute5 from "../assets/images/singleRoutecategory5.svg";
-
+import newproduct1 from "../assets/images/newproduct1.png";
+import newproduct2 from "../assets/images/newproduct2.png";
+import newproduct3 from "../assets/images/newproduct3.png";
 export const Routers = [
   {
     id: 1,
@@ -247,5 +249,26 @@ export const singleRouteproduct = [
     img: singleRoute5,
     title: "Fresh Fruit",
     number: "16",
+  },
+];
+
+export const newproducts = [
+  {
+    id: 1,
+    img: newproduct1,
+    title: "Chen Cardigan",
+    price: "$99.5",
+  },
+  {
+    id: 2,
+    img: newproduct2,
+    title: "Chen Sweater",
+    price: "$89.50",
+  },
+  {
+    id: 1,
+    img: newproduct3,
+    title: "Colorful Jacket",
+    price: "$25",
   },
 ];

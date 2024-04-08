@@ -4,8 +4,11 @@ import axios from "axios";
 import { IoStarSharp } from "react-icons/io5";
 import { AiOutlineUp, AiOutlineDown } from "react-icons/ai";
 import { IoCartOutline } from "react-icons/io5";
-import { FaRegHeart } from "react-icons/fa";
-import { singleRouteproduct } from "../../static/Router";
+import { FaRegHeart, FaFilter } from "react-icons/fa";
+import { newproducts, singleRouteproduct } from "../../static/Router";
+import { FaRegStar } from "react-icons/fa";
+import singleright from "../../assets/images/adminsectionimg.png";
+import singleimg from "../../assets/images/heocarouselimages.png";
 
 let API_URL = "https://fakestoreapi.com/products";
 
@@ -35,6 +38,17 @@ function SingleRoute() {
         <p>{el.title}</p>
       </div>
       <span>{el.number}</span>
+    </div>
+  ));
+  let newitem = newproducts?.map((el) => (
+    <div key={el.id} className="single__right__newproduct__list">
+      <img src={el.img} alt="" />
+      <div className="newproduct__right">
+        <h3>{el.title}</h3>
+        <p>{el.price}</p>
+        <FaRegStar />
+      </div>
+      <hr />
     </div>
   ));
   return (
@@ -263,9 +277,48 @@ function SingleRoute() {
                   Used(45)
                 </li>
               </ul>
+              <div className="single__right__btn__img__wrapper">
+                <button>
+                  <FaFilter />
+                  Filter
+                </button>
+                <img src={singleright} alt="" />
+              </div>
+            </div>
+            <div className="singleRoute__wrapper__right__category">
+              <h2 className="singleRoute__wrapper__right__title">
+                New products
+              </h2>
+              <hr />
+              {newitem}
             </div>
           </div>
         </div>
+        <section id="tovar">
+          <div className="container">
+            <div className="hero__carousel__swipper__two admin__swipper__wrapper">
+              <div className="carousel__wrapper">
+                <h1 className="hero__carousel__title">
+                  Fresh Vegetables Big discount
+                </h1>
+                <p className="hero__carousel__text">
+                  Save up to 50% off on your first order
+                </p>
+                <form action="" className="input__btn">
+                  <input type="text" placeholder="Your email address" />
+                  <button className="hero__carousel__btn admin__swipper__btn">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+              <img
+                src={singleimg}
+                alt=""
+                className="hero__carousel__images admin__swipper__img"
+              />
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

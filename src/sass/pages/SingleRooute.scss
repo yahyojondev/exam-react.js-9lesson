@@ -1,8 +1,9 @@
 .singleRoute {
-  padding: 300px 0px;
+  padding: 300px 0px 200px;
   //   background-color: red;
 }
 .singleRoute__wrapper {
+  padding: 30px 0;
   display: flex;
   gap: 150px;
 }
@@ -213,7 +214,6 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-color: red;
 }
 .singleRoute__wrapper__left__bottom {
   width: 100%;
@@ -303,6 +303,9 @@
 .singleRoute__wrapper__right {
   width: 100%;
   max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   &__category {
     display: flex;
     flex-direction: column;
@@ -412,6 +415,71 @@
       font-weight: 400;
       line-height: 24px;
       letter-spacing: 0%;
+    }
+  }
+  .single__right__btn__img__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      width: 100%;
+      max-width: 106px;
+      padding: 12px 12px 12px 20px;
+      border-radius: 4px;
+      background: rgb(59, 183, 126);
+      color: rgb(255, 255, 255);
+      font-family: Quicksand;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 21.6px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      svg {
+        color: white;
+      }
+    }
+    img {
+      padding-bottom: 30px;
+      width: 100%;
+      max-width: 130px;
+      height: 130px;
+    }
+  }
+  .single__right__newproduct__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img {
+      width: 100%;
+      max-width: 80px;
+      height: 80px;
+    }
+    .newproduct__right {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      h3 {
+        color: rgb(59, 183, 126);
+        font-family: Quicksand;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0%;
+      }
+      p {
+        color: rgb(126, 126, 126);
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+      }
+      svg {
+        color: orange;
+      }
     }
   }
 }
