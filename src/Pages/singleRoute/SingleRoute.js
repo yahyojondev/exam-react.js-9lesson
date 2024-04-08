@@ -5,6 +5,7 @@ import { IoStarSharp } from "react-icons/io5";
 import { AiOutlineUp, AiOutlineDown } from "react-icons/ai";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
+import { singleRouteproduct } from "../../static/Router";
 
 let API_URL = "https://fakestoreapi.com/products";
 
@@ -26,10 +27,20 @@ function SingleRoute() {
   if (loading) {
     return <h2>loading....</h2>;
   }
+
+  let singleRouteitem = singleRouteproduct?.map((el) => (
+    <div className="singRoute__right__card">
+      <div key={el.id} className="img__text__wrapper">
+        <img src={el.img} alt="" />
+        <p>{el.title}</p>
+      </div>
+      <span>{el.number}</span>
+    </div>
+  ));
   return (
     <div className="singleRoute">
       <div className="container">
-        <div className="singleRooute__wrapper">
+        <div className="singleRoute__wrapper">
           <div className="singleRoute__wrapper__left">
             <div className="singleRoute__wrapper__left__top">
               <div className="single__wrapper__left__top__left">
@@ -200,7 +211,60 @@ function SingleRoute() {
               </ul>
             </div>
           </div>
-          <div className="singleRoute__wrapper__right">hello</div>
+          <div className="singleRoute__wrapper__right">
+            <div className="singleRoute__wrapper__right__category">
+              <h2 className="singleRoute__wrapper__right__title">Category</h2>
+              <hr />
+              <div className="singleRoute__right__category__cards">
+                {singleRouteitem}
+              </div>
+            </div>
+            <div className="singleRoute__wrapper__right__category">
+              <h2 className="singleRoute__wrapper__right__title">
+                Fill by price
+              </h2>
+              <hr />
+              <input type="range" />
+              <ul className="single__right__list">
+                <li>
+                  from: <span>$500</span>
+                </li>
+                <li>
+                  To: <span>$1,000</span>
+                </li>
+              </ul>
+              <h3 className="single__right__title">Color</h3>
+              <ul className="single__right__checkbox__list">
+                <li>
+                  <input type="checkbox" />
+                  Red(56)
+                </li>
+                <li>
+                  <input type="checkbox" />
+                  Green(78)
+                </li>
+                <li>
+                  <input type="checkbox" />
+                  Blue(54)
+                </li>
+              </ul>
+              <h3 className="single__right__title">Item Condition</h3>
+              <ul className="single__right__checkbox__list">
+                <li>
+                  <input type="checkbox" />
+                  New(1506)
+                </li>
+                <li>
+                  <input type="checkbox" />
+                  Refurbished(27)
+                </li>
+                <li>
+                  <input type="checkbox" />
+                  Used(45)
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>

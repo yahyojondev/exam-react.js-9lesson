@@ -17,6 +17,11 @@ import card10 from "../assets/images/card10.svg";
 import box1 from "../assets/images/box1.png";
 import box2 from "../assets/images/box2.png";
 import box3 from "../assets/images/box3.png";
+import singleRoute1 from "../assets/images/singleRouterightcategorry1.svg";
+import singleRoute2 from "../assets/images/singleRoutecategory2.svg";
+import singleRoute3 from "../assets/images/singleRoutecategory3.svg";
+import singleRoute4 from "../assets/images/singleRoutecategory4.svg";
+import singleRoute5 from "../assets/images/singleRoutecategory5.svg";
 
 export const Routers = [
   {
@@ -214,5 +219,33 @@ export const mapproduct = [
     link3: "Phone: (123) 456-7890",
     link4: "Email: contact@Evara.com",
     btn: "Wiew map",
+  },
+];
+
+export const singleRouteproduct = [
+  {
+    img: singleRoute1,
+    title: "Milks & Dairies",
+    number: "5",
+  },
+  {
+    img: singleRoute2,
+    title: "Clothing",
+    number: "6",
+  },
+  {
+    img: singleRoute3,
+    title: "Pet Foods",
+    number: "7",
+  },
+  {
+    img: singleRoute4,
+    title: "Baking material",
+    number: "12",
+  },
+  {
+    img: singleRoute5,
+    title: "Fresh Fruit",
+    number: "16",
   },
 ];
