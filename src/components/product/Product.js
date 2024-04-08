@@ -4,6 +4,7 @@ import { productimg, products } from "../../static";
 import axios from "axios";
 import { LiaStarSolid } from "react-icons/lia";
 import { IoCartOutline } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 let API_URL = "https://fakestoreapi.com/products";
 
@@ -65,6 +66,7 @@ function Product() {
           <div className="product__wrapper__top">
             <h2 className="product__wrapper__title">Popular Products</h2>
             <ul className="product__wrapper__list">{productitem}</ul>
+            <GiHamburgerMenu className="product__list__svg" />
           </div>
           <div className="product__wrapper__bottom">{productdata}</div>
         </div>

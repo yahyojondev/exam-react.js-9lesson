@@ -3,11 +3,12 @@ import { categoryproduct } from "../../static/Router";
 import { cardsproduct } from "../../static/Router";
 import { NavLink } from "react-router-dom";
 import { boxproduct } from "../../static/Router";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function categoriy() {
   let categoryitem = categoryproduct?.map((el) => (
     <li key={el.id} className="category__list__item ">
-      <NavLink className={el.class}>{el.title}</NavLink>
+      <NavLink>{el.title}</NavLink>
     </li>
   ));
   let carditem = cardsproduct?.map((el) => (
@@ -41,7 +42,11 @@ function categoriy() {
     <div className="categoriy">
       <div className="container">
         <div className="category__wrapper">
-          <ul className="category__list">{categoryitem}</ul>
+          <ul className="category__list">
+            <li className="category__title">Featured Categories</li>
+            {categoryitem}
+            <GiHamburgerMenu className="category__list__svg" />
+          </ul>
           <div className="category__cards">{carditem}</div>
           <div className="boxs">{boxitem}</div>
         </div>

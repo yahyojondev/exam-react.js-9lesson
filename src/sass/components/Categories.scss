@@ -7,6 +7,7 @@
 .category__list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   column-gap: 30px;
   color: rgb(37, 61, 78);
   font-family: Quicksand;
@@ -14,14 +15,33 @@
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0%;
-  .title {
+  @media only screen and (min-width: 8500px) {
+    justify-content: flex-start;
+  }
+
+  .category__title {
     color: rgb(37, 61, 78);
     font-family: Quicksand;
-    font-size: 32px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 38.4px;
     letter-spacing: 0%;
     text-align: left;
+    @media only screen and (min-width: 400px) {
+      font-size: 32px;
+    }
+  }
+  .category__list__item {
+    display: none;
+    @media only screen and (min-width: 850px) {
+      display: flex;
+    }
+  }
+  .category__list__svg {
+    font-size: 25px;
+    @media only screen and (min-width: 850px) {
+      display: none;
+    }
   }
 }
 .category__cards {

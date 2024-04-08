@@ -78,11 +78,6 @@ export const navbartoplinks = [
 
 export const categoryproduct = [
   {
-    id: 1,
-    class: "title",
-    title: "Featured Categories",
-  },
-  {
     id: 2,
     title: "Cake & Milk",
   },
