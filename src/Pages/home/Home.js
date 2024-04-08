@@ -9,6 +9,7 @@ function Home() {
   return (
     <div>
       <Hero />
+      hello
       <Categoriy />
       <Product />
       <section id="tovar">
