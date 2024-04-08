@@ -59,7 +59,9 @@ function SingleRoute() {
                   <p className="rewiev__count">({product?.rating.count})</p>
                 </div>
                 <div className="single__price__wrapper">
-                  <p className="single__price">${product?.price * count}</p>
+                  <p className="single__price">
+                    ${Math.ceil(product?.price * count)}
+                  </p>
                   <del className="single__pricedel">${product?.price * 2}</del>
                 </div>
                 <p className="single__top__left__description">
@@ -96,16 +98,18 @@ function SingleRoute() {
             <div className="singleRoute__wrapper__left__bottom">
               <ul className="singleRoute__wrapper__left__bottom__list">
                 <li className="singleRoute__wrapper__left__bottom__list__item">
-                  <NavLink>Description</NavLink>
+                  <NavLink className="singleRoute__link">Description</NavLink>
                 </li>
                 <li className="singleRoute__wrapper__left__bottom__list__item">
-                  <NavLink>Additional info</NavLink>
+                  <NavLink className="singleRoute__link">
+                    Additional info
+                  </NavLink>
                 </li>
                 <li className="singleRoute__wrapper__left__bottom__list__item">
-                  <NavLink>Vendor</NavLink>
+                  <NavLink className="singleRoute__link">Vendor</NavLink>
                 </li>
                 <li className="singleRoute__wrapper__left__bottom__list__item">
-                  <NavLink>Reviews (3)</NavLink>
+                  <NavLink className="singleRoute__link">Reviews (3)</NavLink>
                 </li>
               </ul>
               <p className="singleRoute__wrapper__bottom__text">
@@ -122,7 +126,20 @@ function SingleRoute() {
               </p>
               <ul className="single__wrapper__bottom__list">
                 <li className="single__wrapper___bottom__item">
-                  Type Of Packing <span>Bottle</span>
+                  <span>Type Of Packing</span> <span>Bottle</span>
+                </li>
+                <li className="single__wrapper___bottom__item">
+                  <span> Color</span>
+                  <span>Green, Pink, Powder Blue, Purple</span>
+                </li>
+                <li className="single__wrapper___bottom__item">
+                  <span> Color</span> <span>100ml</span>
+                </li>
+                <li className="single__wrapper___bottom__item">
+                  <span>Ethyl Alcohol</span> <span>70%</span>
+                </li>
+                <li className="single__wrapper___bottom__item">
+                  <span> Piece In One</span> <span>Carton</span>
                 </li>
               </ul>
               <hr />
