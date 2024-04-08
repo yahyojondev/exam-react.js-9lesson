@@ -4,7 +4,10 @@
   // background-color: aqua;
   border-bottom: 1px solid rgb(236, 236, 236);
   margin: 0 auto;
-  display: flex;
+  display: none;
+  @media only screen and (min-width: 800px) {
+    display: flex;
+  }
   align-items: center;
 }
 .navbartop__wrapper {

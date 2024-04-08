@@ -11,19 +11,33 @@
   background-size: cover;
   height: 450px;
   border-radius: 30px;
-  padding: 91px 0px 100px 92px;
+  padding: 20px 50px;
+  @media only screen and (min-width: 600px) {
+    padding: 91px 0px 100px 92px;
+  }
 }
 .hero__carousel__swipper__two {
   display: flex;
+  flex-direction: column;
   background: url(../../assets/images/herocarouseltwo.png) no-repeat;
   background-size: cover;
   height: 450px;
   border-radius: 30px;
-  padding: 91px 0px 100px 92px;
+  padding: 20px 50px;
+  @media only screen and (min-width: 600px) {
+    padding: 91px 0px 100px 92px;
+  }
+  @media only screen and (min-width: 1280px) {
+    flex-direction: row;
+  }
   img {
     width: 100%;
-    max-width: 600px;
-    height: 340px;
+    max-width: 350px;
+    object-fit: contain;
+    @media only screen and (min-width: 1280px) {
+      max-width: 600px;
+      height: 340px;
+    }
   }
 }
 .swiper-button-next::after,
@@ -37,57 +51,85 @@
 .carousel__wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 10px;
+  @media only screen and (min-width: 800px) {
+    display: flex;
+    row-gap: 40px;
+  }
 }
 .hero__carousel__title {
   width: 100%;
   max-width: 600px;
   color: rgb(37, 61, 78);
   font-family: Quicksand;
-  font-size: 60px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 72px;
+  line-height: 30px;
   letter-spacing: 0%;
+  @media only screen and (min-width: 800px) {
+    font-size: 60px;
+    line-height: 72px;
+  }
 }
 .hero__carousel__text {
   color: rgb(126, 126, 126);
   font-family: Lato;
-  font-size: 30px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0%;
+  @media only screen and (min-width: 800px) {
+    font-size: 30px;
+  }
 }
 .input__btn {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+  @media only screen and (min-width: 700px) {
+    flex-direction: row;
+  }
   input {
-    position: relative;
-    padding: 20px 20px;
+    padding: 12px 10px;
     width: 100%;
     max-width: 292px;
+    font-size: 12px;
     border-radius: 50px 50px 50px 50px;
+    @media only screen and (min-width: 400px) {
+      font-size: 16px;
+      padding: 20px 20px;
+    }
+    @media only screen and (min-width: 700px) {
+      position: relative;
+    }
   }
   input::placeholder {
     color: rgb(131, 131, 131);
     font-family: Lato;
-    font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0%;
   }
   .hero__carousel__btn {
-    position: absolute;
     left: 300px;
     width: 100%;
-    padding: 18px 15px;
-    max-width: 157px;
+    padding: 10px 10px;
     border-radius: 50px;
     background: rgb(59, 183, 126);
     color: rgb(255, 255, 255);
     font-family: Quicksand;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.5px;
     text-align: center;
+    @media only screen and (min-width: 400px) {
+      max-width: 157px;
+      font-size: 16px;
+      padding: 18px 15px;
+    }
+    @media only screen and (min-width: 700px) {
+      position: absolute;
+    }
   }
 }

@@ -7,6 +7,7 @@ import { IoPersonOutline } from "react-icons/io5";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import navbarlogo from "../../assets/images/navbarlogo.svg";
 import { NavLink } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function navbar__middle() {
   return (
@@ -60,6 +61,7 @@ function navbar__middle() {
               </NavLink>
             </li>
           </ul>
+          <GiHamburgerMenu className="navbar__middle__svg" />
         </div>
       </div>
     </div>

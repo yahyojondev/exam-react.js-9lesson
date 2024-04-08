@@ -23,8 +23,8 @@
       border-radius: 5px;
       background: rgb(59, 183, 126);
       width: 100%;
-      max-width: 255px;
-      padding: 0px 20px;
+      max-width: 300px;
+      padding: 0px 25px;
     }
     &__logo {
       display: flex;
@@ -51,11 +51,13 @@
       font-weight: 700;
       line-height: 44px;
       letter-spacing: 0%;
-      // background-color: green;
       background: rgb(59, 183, 126);
     }
     .navbar__bottom__deals__wrapper {
-      display: flex;
+      display: none;
+      @media only screen and (min-width: 420px) {
+        display: flex;
+      }
       align-items: center;
       column-gap: 10px;
       .navbar__deals__svg {
@@ -73,7 +75,10 @@
       }
     }
     .navbar__bottom__list {
-      display: flex;
+      display: none;
+      @media only screen and (min-width: 1050px) {
+        display: flex;
+      }
       align-items: center;
       column-gap: 35px;
       .navbar__bottom__link {
@@ -94,7 +99,10 @@
     }
   }
   .navbar__bottom__right__wrapper {
-    display: flex;
+    display: none;
+    @media only screen and (min-width: 1200px) {
+      display: flex;
+    }
     align-items: center;
     column-gap: 12px;
     .navbar__bottom__right__svg {
