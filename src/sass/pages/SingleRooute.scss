@@ -5,11 +5,17 @@
 .singleRoute__wrapper {
   padding: 30px 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 150px;
 }
 .singleRoute__wrapper__left__top {
   display: flex;
+  flex-direction: column;
   gap: 50px;
+  @media only screen and (min-width: 1000px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .single__wrapper__left__top__left {
@@ -20,29 +26,38 @@
   gap: 20px;
   &__img__wrapper {
     width: 100%;
-    max-width: 450px;
-    height: 500px;
+
     border-radius: 16px;
     border: 2px solid rgb(162, 210, 201);
     display: flex;
+    width: 100%;
+    max-width: 320px;
     align-items: center;
     justify-content: center;
+    @media only screen and (min-width: 500px) {
+      max-width: 450px;
+      height: 500px;
+    }
     .singleRoute__img {
-      object-fit: cover;
+      object-fit: contain;
       width: 100%;
-      max-width: 400px;
-      height: 400px;
+      max-width: 200px;
+      height: 200px;
+      @media only screen and (min-width: 500px) {
+        max-width: 400px;
+        height: 400px;
+      }
     }
     .singleRoutes__wrapper__top__left__images {
       display: flex;
       align-items: center;
       gap: 10px;
       img {
+        width: 100%;
         padding: 5px;
         box-sizing: border-box;
         border: 2px solid rgb(162, 210, 201);
         border-radius: 17px;
-        background: url();
       }
     }
   }
@@ -52,12 +67,16 @@
     gap: 12px;
     img {
       width: 100%;
-      max-width: 100px;
-      height: 100px;
+      max-width: 70px;
+      height: 70px;
       box-sizing: border-box;
       border: 2px solid rgb(162, 210, 201);
       border-radius: 17px;
       background: url();
+      @media only screen and (min-width: 1400px) {
+        max-width: 100px;
+        height: 100px;
+      }
     }
   }
 }
@@ -131,7 +150,7 @@
   }
   .single__top__left__description {
     width: 100%;
-    max-width: 466px;
+    max-width: 366px;
     color: rgb(126, 126, 126);
     font-family: Lato;
     font-size: 17px;
@@ -229,6 +248,7 @@
   &__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     &__item {
       box-sizing: border-box;
